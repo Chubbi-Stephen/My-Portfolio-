@@ -3,282 +3,418 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stephen Ude-okolie | Senior Software Engineer</title>
-  <meta name="description" content="Senior Software Engineer and Systems Architect specializing in high-fidelity fintech, enterprise systems, and AI integration. Based in Lagos, Nigeria.">
-  <link rel="stylesheet" href="assets/css/portfolio-2026.css">
+  <title>Stephen Ude-okolie — Software Engineer</title>
+  <meta name="description" content="Stephen Ude-okolie (#devchubbi) is a full-stack software engineer in Lagos, Nigeria building fast, thoughtful web applications and client websites with React, TypeScript, and Node.js.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="assets/css/portfolio-2026.css">
   <link rel="icon" href="./images/my logo.png">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="container main-nav">
-    <div class="glass nav-links">
-      <a href="#hero" class="nav-logo">#devchubbi</a>
-      <div class="nav-divider"></div>
-      <a href="#projects" class="nav-link">Projects</a>
-      <a href="#about" class="nav-link">About</a>
-      <a href="#contact" class="nav-link">Contact</a>
-    </div>
-    <div style="display: flex; gap: 1rem;">
-      <a href="assets/UDEOKOLIE-STEPHEN (1).pdf" target="_blank" class="glass nav-github" title="Download Resume">
-        <i class="fas fa-file-pdf" style="font-size: 1.1rem; color: #fff;"></i>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand">
+        <span class="brand-name">Stephen Ude-okolie</span>
+        <span class="brand-handle">#devchubbi</span>
       </a>
-      <a href="https://github.com/Chubbi-Stephen" target="_blank" class="glass nav-github">
-        <img src="https://cdns.iconmonstr.com/wp-content/releases/preview/2012/240/iconmonstr-github-1.png" alt="Github">
-      </a>
-    </div>
-  </nav>
 
-  <!-- Hero Section -->
-  <header id="hero" class="hero">
-    <div class="container hero-content">
-      <div class="reveal">
-        <span class="badge">Software Engineer</span>
-      </div>
-      <h1 class="reveal" style="transition-delay: 0.1s;">
-        Engineering <span>High-Fidelity</span> 
-        Architectures.
-      </h1>
-      <p class="reveal" style="transition-delay: 0.2s; font-size: 1.25rem;">
-        I am <strong>Stephen Ude-okolie</strong>, a systems architect focused on the intersection of AI, Finance, and Enterprise Scalability. I build resilient digital foundations for the next decade.
-      </p>
-      <div class="reveal" style="transition-delay: 0.3s; margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 1rem;">
-        <a href="#projects" class="btn btn-primary">View Portfolio</a>
-        <a href="assets/UDEOKOLIE-STEPHEN (1).pdf" target="_blank" class="btn btn-outline" style="display: flex; align-items: center; gap: 0.5rem;">
-          <i class="fas fa-download"></i> Download CV
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="assets/UDEOKOLIE-STEPHEN (1).pdf" target="_blank" rel="noopener noreferrer" class="header-pill">
+          Resume <span aria-hidden="true">↗</span>
         </a>
-        <a href="#contact" class="btn btn-outline">Let's Talk</a>
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span>
+          <span></span>
+        </button>
       </div>
+    </div>
+
+    <div id="mobile-menu" class="mobile-menu" hidden>
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="assets/UDEOKOLIE-STEPHEN (1).pdf" target="_blank" rel="noopener noreferrer">Resume (PDF) ↗</a>
     </div>
   </header>
 
-  <!-- Expertise / Bento Section -->
-  <section id="expertise">
-    <div class="container">
-      <h2 class="reveal">Expertise</h2>
-      <div class="bento-grid">
-        <div class="bento-item large glass reveal">
-          <div class="bento-content">
-            <h3 style="color: var(--accent-color);">Systems Architecture</h3>
-            <p>Designing high-availability systems with a focus on performance, security, and developer experience.</p>
-          </div>
-        </div>
-        <div class="bento-item glass reveal" style="transition-delay: 0.1s;">
-          <div class="bento-content">
-            <h3>Fintech Focus</h3>
-            <p>PWA & AI-driven financial mentorship engines.</p>
-          </div>
-        </div>
-        <div class="bento-item glass reveal" style="transition-delay: 0.2s;">
-          <div class="bento-content">
-            <h3>Enterprise Scaling</h3>
-            <p>Moving from MVP to high-scale production systems.</p>
-          </div>
-        </div>
-        <div class="bento-item wide glass reveal" style="transition-delay: 0.3s; background: linear-gradient(45deg, rgba(230, 0, 122, 0.05), transparent);">
-          <div class="bento-content">
-            <h3 style="color: var(--accent-secondary);">Creative Synthesis</h3>
-            <p>Bridging the gap between technical engineering and artistic expression as a Music Producer & Pianist.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Architectural Toolkit -->
-  <section id="toolkit" style="padding-top: 0;">
-    <div class="container">
-      <h2 class="reveal">Architectural Toolkit</h2>
-      <div class="toolkit-grid reveal">
-        <div class="tool-card">
-          <i class="fab fa-react"></i>
-          <div class="tool-name">React / Next.js</div>
-        </div>
-        <div class="tool-card">
-          <i class="fab fa-js-square"></i>
-          <div class="tool-name">TypeScript</div>
-        </div>
-        <div class="tool-card">
-          <i class="fab fa-node-js"></i>
-          <div class="tool-name">Node.js</div>
-        </div>
-        <div class="tool-card">
-          <i class="fab fa-python"></i>
-          <div class="tool-name">Python / AI</div>
-        </div>
-        <div class="tool-card">
-          <i class="fas fa-database"></i>
-          <div class="tool-name">PostgreSQL</div>
-        </div>
-        <div class="tool-card">
-          <i class="fab fa-css3-alt"></i>
-          <div class="tool-name">Tailwind CSS</div>
-        </div>
-        <div class="tool-card">
-          <i class="fas fa-layer-group"></i>
-          <div class="tool-name">State Management</div>
-        </div>
-        <div class="tool-card">
-          <i class="fas fa-microchip"></i>
-          <div class="tool-name">Systems Design</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Technical Sync Layer (Senior Touch) -->
-  <div class="sync-layer">
-    <div class="container sync-container">
-      <div class="sync-dot"></div>
-      <span id="terminal-sync">// Initializing senior architectural insights...</span>
-    </div>
-  </div>
-
-  <!-- Featured Projects -->
-  <section id="projects">
-    <div class="container">
-      <h2 class="reveal">Selected Works</h2>
-
-	   <!-- Royal Ceeman -->
-      <div class="project-card reveal">
-        <div class="project-img">
-          <img src="./images/ceeman.png" alt="Royal Ceeman Global Website">
-        </div>
-        <div class="project-content">
-          <span class="badge" style="font-size: 0.7rem;">Industrial | SaaS</span>
-          <h3 style="margin: 1rem 0;">Royal Ceeman Global</h3>
-          <p>
-            Architected the digital presence for Ceeman Power, a leading Nigerian energy brand. Developed a high-performance marketing platform that communicates durability and efficiency. The system utilizes a responsive architecture to ensure seamless accessibility across West Africa's varied device landscape.
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-main">
+          <p class="eyebrow">Software Engineer · Lagos, Nigeria</p>
+          <h1>
+            I build web products that feel <em>calm, fast,</em> and dependable.
+          </h1>
+          <p class="hero-lead">
+            I’m <strong>Stephen Ude-okolie</strong> — a full-stack developer working mostly with React, TypeScript, and Node.js. From offline-first PWAs to custom client websites like <a href="https://moscath.com" target="_blank" rel="noopener noreferrer" class="inline-link">moscath.com</a>, I care about software that works well for real people.
           </p>
-          <div class="project-tags">
-            <span class="tag">React.js</span>
-            <span class="tag">Tailwind CSS</span>
-            <span class="tag">Responsive Design</span>
+          <div class="hero-cta">
+            <a href="#work" class="btn btn-dark">Selected Work</a>
+            <a href="#contact" class="btn btn-soft">Get in touch</a>
+            <a href="assets/UDEOKOLIE-STEPHEN (1).pdf" target="_blank" rel="noopener noreferrer" class="btn-text">
+              Download CV <span aria-hidden="true">→</span>
+            </a>
           </div>
-          <a href="#" class="btn btn-outline" style="margin-top: 2rem; width: fit-content;">Explore Case Study</a>
+        </div>
+
+        <aside class="hero-aside">
+          <div class="status-card">
+            <div class="status-row">
+              <span class="status-indicator" aria-hidden="true"></span>
+              <span class="status-label">Currently</span>
+            </div>
+            <p class="status-text">
+              Frontend Developer at <strong>ProQAR</strong> (Construction Site Inspection PWA) &amp; taking on select client builds.
+            </p>
+            <dl class="quick-facts">
+              <div>
+                <dt>Focus</dt>
+                <dd>React, Next.js, TypeScript, Node.js, PWAs</dd>
+              </div>
+              <div>
+                <dt>Recent Launch</dt>
+                <dd><a href="https://moscath.com" target="_blank" rel="noopener noreferrer">moscath.com ↗</a></dd>
+              </div>
+              <div>
+                <dt>Based in</dt>
+                <dd>Lagos, Nigeria (Open to remote)</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Selected Work -->
+    <section id="work" class="section-bordered">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Selected Work</p>
+            <h2>Things I’ve designed &amp; built</h2>
+          </div>
+          <p class="section-note">
+            A mix of live client websites and full-stack product builds.
+          </p>
+        </div>
+
+        <!-- Featured Project: Moscath Garden Apartments -->
+        <article class="featured-project reveal">
+          <a href="https://moscath.com" target="_blank" rel="noopener noreferrer" class="project-media featured-media">
+            <img src="./images/moscath-live.png" alt="Moscath Garden Apartments live website homepage">
+            <span class="live-badge">Just Launched · Live</span>
+          </a>
+          <div class="project-body">
+            <div class="project-meta">
+              <span>Client Project</span>
+              <span>Hospitality &amp; Booking</span>
+            </div>
+            <h3>Moscath Garden Apartments</h3>
+            <p>
+              Built and launched the live web presence for Moscath Garden Apartments, a luxury serviced short-let in Osapa London, Lekki. Designed around an editorial hospitality aesthetic with apartment showcases, a photo gallery, local area guide, guest reviews, structured <code>LodgingBusiness</code> JSON-LD SEO, and one-tap WhatsApp booking backed by a modular data layer.
+            </p>
+            <ul class="tag-list">
+              <li>HTML / CSS / JS</li>
+              <li>Editorial UI</li>
+              <li>SEO &amp; Schema.org</li>
+              <li>WhatsApp Booking Flow</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://moscath.com" target="_blank" rel="noopener noreferrer" class="btn btn-dark">
+                Visit moscath.com <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Other Projects Grid -->
+        <div class="projects-grid">
+          <!-- Tranxact -->
+          <article class="project-card reveal">
+            <a href="https://tranxxact.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-media media-contain">
+              <img src="./images/Tranxact.png" alt="Tranxact fintech dashboard interface">
+            </a>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>Full-Stack Web App</span>
+                <span>Fintech</span>
+              </div>
+              <h3>Tranxact</h3>
+              <p>
+                A peer-to-peer transfer and personal finance application built with React and TypeScript. Includes JWT authentication, filtered transaction history, React Hook Form validation for transfers, and an AI assistant for everyday budgeting questions.
+              </p>
+              <ul class="tag-list">
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>Node.js</li>
+                <li>JWT Auth</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://tranxxact.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                  View live app <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Royal Ceeman Global -->
+          <article class="project-card reveal">
+            <a href="https://royalceemanglobal.com/" target="_blank" rel="noopener noreferrer" class="project-media">
+              <img src="./images/ceeman.png" alt="Royal Ceeman Global website">
+            </a>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>Client Project</span>
+                <span>Energy &amp; Industrial</span>
+              </div>
+              <h3>Royal Ceeman Global</h3>
+              <p>
+                Corporate and product showcase website for Ceeman Power Generator, a Nigerian power solutions brand founded in 2006. Built to present product specs, durability, and dealer enquiries cleanly across both mobile connections and desktop browsers.
+              </p>
+              <ul class="tag-list">
+                <li>React.js</li>
+                <li>Tailwind CSS</li>
+                <li>Responsive UI</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://royalceemanglobal.com/" target="_blank" rel="noopener noreferrer" class="project-link">
+                  Visit royalceemanglobal.com <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Juddie -->
+          <article class="project-card reveal">
+            <a href="https://juddie.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-media media-contain">
+              <img src="./images/juddie.PNG" alt="Juddie e-commerce storefront">
+            </a>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>Web Application</span>
+                <span>E-Commerce</span>
+              </div>
+              <h3>Juddie Storefront</h3>
+              <p>
+                An online clothing storefront with product discovery, search filtering, and persistent cart management powered by React, Redux Toolkit, and Tailwind CSS connected to backend product APIs.
+              </p>
+              <ul class="tag-list">
+                <li>React</li>
+                <li>Redux Toolkit</li>
+                <li>Tailwind CSS</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://juddie.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                  View live demo <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- SixthSenseMusic Studio -->
+          <article class="project-card reveal">
+            <a href="https://sixthsensemusic.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-media">
+              <img src="./images/sixthsense.jpeg" alt="SixthSenseMusic Studio website">
+            </a>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>Client Project</span>
+                <span>Music &amp; Audio</span>
+              </div>
+              <h3>SixthSenseMusic Studio</h3>
+              <p>
+                Custom website built from scratch with HTML, SCSS, and JavaScript for a music production studio — capturing the studio’s creative identity with clean audio-focused presentation and smooth scroll interactions.
+              </p>
+              <ul class="tag-list">
+                <li>HTML &amp; SCSS</li>
+                <li>JavaScript</li>
+                <li>Custom UI</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://sixthsensemusic.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                  View live site <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
+    </section>
 
-      <!-- Tranxact -->
-      <div class="project-card reveal">
-        <div class="project-img">
-          <img src="./images/Tranxact.png" alt="Tranxact Fintech Super-App">
-        </div>
-        <div class="project-content">
-          <span class="badge" style="font-size: 0.7rem;">Fintech | PWA | AI</span>
-          <h3 style="margin: 1rem 0;">Tranxact: AI Financial Mentor</h3>
-          <p>
-            A high-fidelity fintech super-app featuring "T-Co," an intelligent financial coach. Built as a high-performance PWA with a dual-brain architecture for agentic mentorship, enabling automated transfers and smart analytics within a premium UI environment.
-          </p>
-          <div class="project-tags">
-            <span class="tag">PWA</span>
-            <span class="tag">AI Engine</span>
-            <span class="tag">Node.js</span>
-            <span class="tag">React</span>
+    <!-- Experience & Toolkit -->
+    <section id="experience" class="section-bordered">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Experience &amp; Stack</p>
+            <h2>Where I’ve shipped code</h2>
           </div>
-          <a href="https://tranxxact.vercel.app/" target="_blank" class="btn btn-outline" style="margin-top: 2rem; width: fit-content;">Explore Case Study</a>
+          <a href="assets/UDEOKOLIE-STEPHEN (1).pdf" target="_blank" rel="noopener noreferrer" class="btn-text">
+            Full CV in PDF <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <div class="exp-layout">
+          <div class="exp-list">
+            <div class="exp-item reveal">
+              <div class="exp-date">Jun 2026 — Present</div>
+              <div class="exp-details">
+                <h3>Frontend Developer · ProQAR</h3>
+                <p class="exp-sub">Construction Site Inspection PWA</p>
+                <p>
+                  Built and deployed a working PWA demo solo in under 48 hours using React 18, Tailwind CSS, Zustand, Dexie.js, Workbox, Konva.js, jsPDF, Supabase, and Paystack. That demo led to a full client engagement where I now lead core UI architecture, offline-first field sync, and in-app PDF report generation.
+                </p>
+              </div>
+            </div>
+
+            <div class="exp-item reveal">
+              <div class="exp-date">Jan 2022 — Aug 2024</div>
+              <div class="exp-details">
+                <h3>Software Engineer · 100Devs</h3>
+                <p class="exp-sub">Full-Stack MERN Development</p>
+                <p>
+                  Built and deployed full-stack web applications within agile teams, focusing on responsive interfaces, clean REST APIs, code reviews, and pair programming.
+                </p>
+              </div>
+            </div>
+
+            <div class="exp-item reveal">
+              <div class="exp-date">Nov 2025 — Jan 2026</div>
+              <div class="exp-details">
+                <h3>PR &amp; Travel Operations Intern · Afari Travels and Tours</h3>
+                <p class="exp-sub">Client Relations &amp; Operations</p>
+                <p>
+                  Coordinated client itineraries, travel logistics, and outreach campaigns — sharpening the stakeholder communication and problem-solving I bring into client software work.
+                </p>
+              </div>
+            </div>
+
+            <div class="exp-item reveal">
+              <div class="exp-date">Jan 2024 — Present</div>
+              <div class="exp-details">
+                <h3>BSc Computer Science &amp; Software Engineering</h3>
+                <p class="exp-sub">Global Wealth University</p>
+                <p>
+                  Formal grounding in algorithms, software design, and systems engineering alongside hands-on production work.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <aside class="stack-panel reveal">
+            <h3>Tools I reach for</h3>
+            <div class="stack-group">
+              <h4>Frontend</h4>
+              <p>React.js, Next.js, React Native, TypeScript, JavaScript, Redux, Zustand, Tailwind CSS, HTML/SCSS</p>
+            </div>
+            <div class="stack-group">
+              <h4>Backend &amp; Offline</h4>
+              <p>Node.js, Express.js, Python, Supabase, Dexie.js, Workbox (PWA)</p>
+            </div>
+            <div class="stack-group">
+              <h4>Delivery</h4>
+              <p>Paystack, Vercel, Netlify, Git/GitHub, SEO &amp; Structured Data</p>
+            </div>
+          </aside>
         </div>
       </div>
+    </section>
 
-      <div class="project-card reveal">
-        <div class="project-img">
-          <img src="./images/juddie.PNG" alt="Juddie Ecommerce">
-        </div>
-        <div class="project-content">
-          <span class="badge" style="font-size: 0.7rem;">E-Commerce</span>
-          <h3 style="margin: 1rem 0;">Juddie: Modern Commerce</h3>
-          <p>
-            A dynamic online shopping platform powered by React and Redux. Features a sleek, responsive interface with robust API integration for seamless product discovery and checkout experiences.
-          </p>
-          <div class="project-tags">
-            <span class="tag">React</span>
-            <span class="tag">Redux Toolkit</span>
-            <span class="tag">Tailwind CSS</span>
-          </div>
-          <a href="https://juddie.netlify.app/" target="_blank" class="btn btn-outline" style="margin-top: 2rem; width: fit-content;">Live Demo</a>
-        </div>
-      </div>
-
-      <!-- <div class="project-card reveal">
-        <div class="project-img">
-          <img src="./images/default.png" alt="Patphina School System">
-        </div>
-        <div class="project-content">
-          <span class="badge" style="font-size: 0.7rem;">Enterprise | EdTech</span>
-          <h3 style="margin: 1rem 0;">Patphina Management</h3>
-          <p>
-            Scaled a school management system to support a large user base. Implemented automated backups, Cloudinary-based storage, and a high-throughput CBT engine for concurrent examination workflows.
-          </p>
-          <div class="project-tags">
-            <span class="tag">Scale</span>
-            <span class="tag">Backend Optimization</span>
-            <span class="tag">CBT Engine</span>
-          </div>
-          <a href="#" class="btn btn-outline" style="margin-top: 2rem; width: fit-content;">Technical Breakdown</a>
-        </div>
-      </div> -->
-  </section>
-
-      
-
-     
-
-  <!-- About Section -->
-  <section id="about" class="glass about-section">
-    <div class="container about-grid">
-      <div class="reveal">
-        <div class="about-image-wrapper">
+    <!-- About -->
+    <section id="about" class="section-bordered">
+      <div class="container about-grid">
+        <div class="about-photo reveal">
           <img src="./images/me.jpg" alt="Stephen Ude-okolie">
         </div>
-      </div>
-      <div class="project-content">
-        <h2 class="reveal">The Architect Behind the Code</h2>
-        <p class="reveal" style="font-size: 1.1rem; transition-delay: 0.1s;">
-          Based in Lagos, Nigeria, I've spent the last few years bridging the gap between hardware power and software elegance. Whether I'm architecting a fintech super-app or producing a record in the studio, my focus remains on <strong>harmony and precision</strong>.
-        </p>
-        <p class="reveal" style="margin-top: 1.5rem; transition-delay: 0.2s;">
-          I specialize in building systems that aren't just functional, but <em>intentional</em>. My background as a music producer and pianist gives me a unique perspective on rhythm and flow within software architectures.
-        </p>
-        <div class="reveal" style="display: flex; gap: 1rem; margin-top: 2rem; transition-delay: 0.3s;">
-          <a href="https://linkedin.com/in/stephen-ude-okolie-a6a049212" target="_blank" class="tag">LinkedIn</a>
-          <a href="https://twitter.com/Chubbi_Stephen" target="_blank" class="tag">Twitter</a>
-          <a href="https://github.com/Chubbi-Stephen" target="_blank" class="tag">GitHub</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container" style="max-width: 800px; text-align: center;">
-      <h2 class="reveal">Initiate Collaboration</h2>
-      <p class="reveal" style="margin: 0 auto 4rem;">Have a complex system that needs architectural clarity? Or a product vision that needs a high-fidelity touch? Let's connect.</p>
-      
-      <form name="portfolio-contact" method="POST" data-netlify="true" class="reveal glass contact-form" style="transition-delay: 0.1s;">
-        <input type="hidden" name="form-name" value="portfolio-contact">
-        <div class="form-row">
-          <div class="form-group">
-            <label class="form-label">Full Name</label>
-            <input type="text" name="name" placeholder="John Doe" class="form-input">
-          </div>
-          <div class="form-group">
-            <label class="form-label">Email Address</label>
-            <input type="email" name="email" placeholder="john@company.com" class="form-input">
+        <div class="about-copy reveal">
+          <p class="eyebrow">About Me</p>
+          <h2>A developer who cares about clarity and craft.</h2>
+          <p>
+            I’m Ude-okolie Chukwubuikem Stephen — most people online know me as <strong>#devchubbi</strong>. Over the past couple of years in Lagos, I’ve worked across full-stack web apps and freelance builds, helping local businesses show up well online and turning rough product ideas into software people enjoy using.
+          </p>
+          <p>
+            When I step away from my editor, I’m usually at the piano or producing music in the studio, sketching with pencil and paint, or spending time with family. Writing music and building interfaces have more in common than people think: both are about pacing, structure, and knowing what to leave out.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/Chubbi-Stephen" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-github" aria-hidden="true"></i> GitHub
+            </a>
+            <a href="https://linkedin.com/in/stephen-ude-okolie-a6a049212" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
+            </a>
+            <a href="https://twitter.com/Chubbi_Stephen" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-twitter" aria-hidden="true"></i> X / Twitter
+            </a>
           </div>
         </div>
-        <div class="form-group" style="margin-bottom: 2rem;">
-          <label class="form-label">Message</label>
-          <textarea name="message" rows="5" placeholder="How can I help you build the future?" class="form-textarea"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary" style="width: 100%;">Transmit Message</button>
-      </form>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <!-- Footer -->
-  <footer style="padding: 4rem 0; border-top: 1px solid var(--border-color); text-align: center;">
-    <p style="font-size: 0.8rem;">&copy; 2026 Stephen Ude-okolie. <span style="color: var(--accent-color);">Built for the next decade.</span></p>
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Have a project in mind?</h2>
+          <p>
+            Whether you need a fast marketing site for your business, a React frontend for your product, or someone to help ship an MVP, feel free to reach out.
+          </p>
+          <div class="contact-direct">
+            <a href="mailto:udeokoliestephen@gmail.com" class="contact-detail">
+              <span class="detail-label">Email</span>
+              <span class="detail-value">udeokoliestephen@gmail.com</span>
+            </a>
+            <div class="contact-detail">
+              <span class="detail-label">Location</span>
+              <span class="detail-value">Lagos, Nigeria</span>
+            </div>
+          </div>
+        </div>
+
+        <form name="portfolio-contact" method="POST" data-netlify="true" class="contact-form reveal">
+          <input type="hidden" name="form-name" value="portfolio-contact">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Name</label>
+              <input id="contact-name" type="text" name="name" placeholder="Your name" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Email</label>
+              <input id="contact-email" type="email" name="email" placeholder="you@example.com" class="form-input" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contact-message" class="form-label">Message</label>
+            <textarea id="contact-message" name="message" rows="5" placeholder="Tell me a little about what you're building..." class="form-textarea" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark submit-btn">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Stephen Ude-okolie (#devchubbi).</p>
+      <div class="footer-links">
+        <a href="https://github.com/Chubbi-Stephen" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/stephen-ude-okolie-a6a049212" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:udeokoliestephen@gmail.com">Email</a>
+      </div>
+    </div>
   </footer>
 
   <script src="assets/js/portfolio-2026.js"></script>
